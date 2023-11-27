@@ -1,0 +1,24 @@
+/* .center{
+    margin: 50px auto;
+    width: 210px;
+} */
+
+*,*::before, *::after{
+    box-sizing:border-box;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background:linear-gradient(to right, #00AAFF,#00FF9B)
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 93vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows:minmax(120px , auto) repeat(5, 93px)
+}
